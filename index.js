@@ -29,7 +29,7 @@ app.get("/auth", (req, res) => {
       userName: "admin",
       email: "admin@gmail.com",
       empId: "-1",
-      role: "SUPER_ADMIN",
+      roleName: "SUPER_ADMIN",
       phoneNumber: null,
       modules: ["FM", "UM", "AM", "CRA"],
     },
