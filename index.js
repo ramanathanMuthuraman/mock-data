@@ -23,6 +23,14 @@ app.post("/auth", (req, res) => {
   });
 });
 
+app.get("/alert", (req, res) => {
+  res.send(require("./mock/alerts.json"));
+});
+
+app.get("/user", (req, res) => {
+  res.send(require("./mock/user.json"));
+});
+
 app.listen(8080, () => {
   console.log("server started on port 8080");
 });

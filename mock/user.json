@@ -1,0 +1,38 @@
+[
+  {
+    "username": "User",
+    "firstname": "User",
+    "lastname": "21",
+    "middlename": "21",
+    "empId": "010",
+    "department": "Engineering22",
+    "mobileno": "123456789",
+    "email": "user1@gmail.com",
+    "roleName": "USER",
+    "modules": ["AM", "CRA"]
+  },
+  {
+    "username": "User1",
+    "firstname": "User",
+    "lastname": "21",
+    "middlename": "21",
+    "empId": "010",
+    "department": "Engineering22",
+    "mobileno": "123456789",
+    "email": "user1@gmail.com",
+    "roleName": "USER",
+    "modules": ["AM"]
+  },
+  {
+    "username": "User2",
+    "firstname": "User2",
+    "lastname": "2",
+    "middlename": "2",
+    "empId": "002",
+    "department": "Engineering2",
+    "mobileno": "123456789",
+    "email": "user2@gmail.com",
+    "roleName": "USER",
+    "modules": ["AM", "CRA"]
+  }
+]
