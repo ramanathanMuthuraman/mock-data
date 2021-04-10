@@ -31,6 +31,12 @@ app.get("/user", (req, res) => {
   res.send(require("./mock/user.json"));
 });
 
+app.post("/user", (req, res) => {
+  setTimeout(() => {
+    res.send({ message: "success" });
+  }, 2000);
+});
+
 app.listen(8080, () => {
   console.log("server started on port 8080");
 });
