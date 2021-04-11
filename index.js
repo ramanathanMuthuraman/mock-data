@@ -8,27 +8,39 @@ const app = express();
 app.use(cors());
 
 app.post("/auth", (req, res) => {
-  res.send({
-    token:
-      "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTYxNzQzNzM5NywiaWF0IjoxNjE3MzUwOTk3fQ.s2Pb6XsfMTCoa-q7g1Py3vm9K2vVyVb2SuBnIctGvv5XqoThhDOvO8YTnU1IS4F-qN4rI4BwcaVdIG9wW9JmMA",
-    tokenExpiryTime: 86400,
-    user: {
-      userName: "admin",
-      email: "admin@gmail.com",
-      empId: "-1",
-      roleName: "SUPER_ADMIN",
-      phoneNumber: null,
-      modules: ["FM", "UM", "AM", "CRA"],
-    },
-  });
+  setTimeout(() => {
+    res.send({
+      token:
+        "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTYxNzQzNzM5NywiaWF0IjoxNjE3MzUwOTk3fQ.s2Pb6XsfMTCoa-q7g1Py3vm9K2vVyVb2SuBnIctGvv5XqoThhDOvO8YTnU1IS4F-qN4rI4BwcaVdIG9wW9JmMA",
+      tokenExpiryTime: 86400,
+      user: {
+        userName: "admin",
+        email: "admin@gmail.com",
+        empId: "-1",
+        roleName: "SUPER_ADMIN",
+        phoneNumber: null,
+        modules: ["FM", "UM", "AM", "CRA"],
+      },
+    });
+  }, 2000);
 });
 
 app.get("/alert", (req, res) => {
-  res.send(require("./mock/alerts.json"));
+  setTimeout(() => {
+    res.send(require("./mock/alerts.json"));
+  }, 2000);
+});
+
+app.post("/alert/:user/assign", (req, res) => {
+  setTimeout(() => {
+    res.send({ message: "success" });
+  }, 2000);
 });
 
 app.get("/user", (req, res) => {
-  res.send(require("./mock/user.json"));
+  setTimeout(() => {
+    res.send(require("./mock/user.json"));
+  }, 2000);
 });
 
 app.post("/user", (req, res) => {
