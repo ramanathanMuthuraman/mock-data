@@ -1,0 +1,34 @@
+{
+  "allAlerts": [
+    {
+      "id": 541,
+      "alertId": "5219t89",
+      "score": "17",
+      "focusType": "AC",
+      "focus": "4076626",
+      "customerName": "KRISHNAN M",
+      "created": "2020-11-08 00:00:00",
+      "status": "NW1",
+      "thresholdName": "TRANSCITON IN ACCOUNT",
+      "riskScore": "high",
+      "employeeName": "User",
+      "customerId": "322332",
+      "dateCreated": "2021-04-13T18:10:36+05:30"
+    },
+    {
+      "id": 547,
+      "alertId": "52t1995",
+      "score": "17",
+      "focusType": "AC",
+      "focus": "4076626",
+      "customerName": "KRISHNAN M",
+      "created": "2020-11-06 00:00:00",
+      "status": "NW1",
+      "thresholdName": "TRANSCITON IN ACCOUNT",
+      "riskScore": "high",
+      "employeeName": "User",
+      "customerId": "322332",
+      "dateCreated": "2021-04-13T18:10:36+05:30"
+    }
+  ]
+}

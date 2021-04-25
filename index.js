@@ -17,7 +17,7 @@ app.post("/auth", (req, res) => {
         userName: "admin",
         email: "admin@gmail.com",
         empId: "-1",
-        roleName: "SUPER_ADMIN",
+        roleName: "USER",
         phoneNumber: null,
         modules: ["FM", "UM", "AM", "CRA"],
       },
@@ -28,6 +28,18 @@ app.post("/auth", (req, res) => {
 app.get("/alert", (req, res) => {
   setTimeout(() => {
     res.send(require("./mock/alerts.json"));
+  }, 2000);
+});
+
+app.get("/alert/*/user", (req, res) => {
+  setTimeout(() => {
+    res.send(require("./mock/userAlerts.json"));
+  }, 2000);
+});
+
+app.put("/alert", (req, res) => {
+  setTimeout(() => {
+    res.send({ message: "success" });
   }, 2000);
 });
 
@@ -46,6 +58,12 @@ app.get("/user", (req, res) => {
 app.post("/user", (req, res) => {
   setTimeout(() => {
     res.send({ message: "success" });
+  }, 2000);
+});
+
+app.put("/user/changepassword", (req, res) => {
+  setTimeout(() => {
+    res.send(true);
   }, 2000);
 });
 
