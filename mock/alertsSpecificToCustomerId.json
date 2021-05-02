@@ -1,0 +1,17 @@
+[
+  {
+    "id": 542,
+    "alertId": "52190",
+    "score": "19",
+    "focusType": "AC",
+    "focus": "4076636",
+    "customerName": "KRISHNAN M1",
+    "created": "2020-11-08 00:00:00",
+    "status": "NW2",
+    "thresholdName": "TRANSCITON IN ACCOUNT",
+    "riskScore": "Medium",
+    "employeeName": "",
+    "customerId": "322334",
+    "dateCreated": "2021-04-13T18:10:36+05:30"
+  }
+]
