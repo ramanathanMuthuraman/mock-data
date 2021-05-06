@@ -31,9 +31,9 @@ app.get("/alert", (req, res) => {
   }, 2000);
 });
 
-app.get("/alert/*/user", (req, res) => {
+app.get("/alert/user", (req, res) => {
   setTimeout(() => {
-    res.send(require("./mock/userAlerts.json"));
+    res.send(require("./mock/assignedAlerts.json"));
   }, 2000);
 });
 
@@ -43,7 +43,7 @@ app.get("/alert/customerId", (req, res) => {
   }, 2000);
 });
 
-app.get("/alert/:customerId", (req, res) => {
+app.get("/alert/customer", (req, res) => {
   setTimeout(() => {
     res.send(require("./mock/alertsSpecificToCustomerId.json"));
   }, 2000);
