@@ -31,6 +31,12 @@ app.get("/alert", (req, res) => {
   }, 2000);
 });
 
+app.get("/cra", (req, res) => {
+  setTimeout(() => {
+    res.send(require("./mock/cra.json"));
+  }, 2000);
+});
+
 app.get("/alert/user", (req, res) => {
   setTimeout(() => {
     res.send(require("./mock/assignedAlerts.json"));

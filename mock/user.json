@@ -21,7 +21,7 @@
     "mobileno": "123456789",
     "email": "user1@gmail.com",
     "roleName": "USER",
-    "modules": ["AM"]
+    "modules": ["CRA"]
   },
   {
     "username": "User2",
@@ -33,6 +33,6 @@
     "mobileno": "123456789",
     "email": "user2@gmail.com",
     "roleName": "USER",
-    "modules": ["AM", "CRA"]
+    "modules": ["AM"]
   }
 ]
