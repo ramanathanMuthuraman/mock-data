@@ -17,7 +17,7 @@ app.post("/auth", (req, res) => {
         userName: "admin",
         email: "admin@gmail.com",
         empId: "-1",
-        roleName: "USER",
+        roleName: "SUPER_ADMIN",
         phoneNumber: null,
         modules: ["FM", "UM", "AM", "CRA"],
       },
@@ -34,6 +34,18 @@ app.get("/alert", (req, res) => {
 app.get("/cra", (req, res) => {
   setTimeout(() => {
     res.send(require("./mock/cra.json"));
+  }, 2000);
+});
+
+app.get("/cra/department", (req, res) => {
+  setTimeout(() => {
+    res.send(require("./mock/department.json"));
+  }, 2000);
+});
+
+app.get("/cra/pending", (req, res) => {
+  setTimeout(() => {
+    res.send(require("./mock/pendingCRA.json"));
   }, 2000);
 });
 
@@ -67,6 +79,30 @@ app.post("/alert/:user/assign", (req, res) => {
   }, 2000);
 });
 
+app.post("/cra", (req, res) => {
+  setTimeout(() => {
+    res.send({ message: "success" });
+  }, 2000);
+});
+
+app.post("/cra/approve", (req, res) => {
+  setTimeout(() => {
+    res.send({ message: "success" });
+  }, 2000);
+});
+
+app.put("/cra", (req, res) => {
+  setTimeout(() => {
+    res.send({ message: "success" });
+  }, 2000);
+});
+
+app.delete("/cra", (req, res) => {
+  setTimeout(() => {
+    res.send({ message: "success" });
+  }, 2000);
+});
+
 app.get("/user", (req, res) => {
   setTimeout(() => {
     res.send(require("./mock/user.json"));
@@ -74,6 +110,12 @@ app.get("/user", (req, res) => {
 });
 
 app.post("/user", (req, res) => {
+  setTimeout(() => {
+    res.send({ message: "success" });
+  }, 2000);
+});
+
+app.put("/user", (req, res) => {
   setTimeout(() => {
     res.send({ message: "success" });
   }, 2000);
